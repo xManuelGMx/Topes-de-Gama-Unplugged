@@ -1,0 +1,148 @@
+.contenedor{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+body{
+    /*font-family: 'Big Shoulders Text', cursive;*/
+    font-family: 'IBM Plex Sans', sans-serif;
+    /*font-family: 'IBM Plex Mono', monospace;*/
+    background-color: rgb(235, 236, 236);
+    overflow-x:hidden;
+}
+svg{
+    user-select: none;
+}
+/* menu + Header */
+img.logo{
+    padding-top: 5%;
+}
+input[id="menu"]{
+    display: none;
+}
+/*Mostrar*/
+input[id="menu"]:not(:checked)~.menu{
+    left: 100%;
+    animation: menuShow 1.5s;
+}
+input[id="menu"]:not(:checked)~header>div>span>label>div>img{
+    transform: rotate(0deg);
+    animation: OpenMenu 1s;
+}
+/*Esconder*/
+input[id="menu"]:checked~.menu{
+    left: 0;
+    animation: menuHide 1.5s;
+}
+input[id="menu"]:checked~header>div>span>label>div>img{
+    transform: rotate(45deg);
+    animation: CloseMenu 1s;
+}
+header{
+    background-color: rgb(29, 51, 64);
+    width: 100vw;
+    height: calc(7vh+vmin);
+}
+div.nav{
+    padding: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+div.menu{
+    position: absolute;
+    right: 0;
+    top: 7.7vh;
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    background-color: rgb(29, 51, 64);
+    font-size: 1.2em;
+}
+ul{
+    margin-top: 0px;
+    text-align: center;
+    padding: 0px
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(235, 236, 236);
+}
+a:hover{
+    color: rgb(229, 107, 17);
+}
+/* Section */
+h2{
+    font-size: 1.5em;
+}
+section{
+    margin: 5%;
+}
+div.info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.boton{
+    background-color:rgb(0,243,187);
+    font-family: 'IBM Plex Mono';
+    font-size: 1.2em;
+    padding: 1.5vw;
+    margin: auto;
+    border-style: none;
+}
+div.podcast{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+iframe{
+    margin: auto;
+    margin-bottom: 5%;
+}
+span{
+    text-align: center;
+}
+/* Animaciones */
+@keyframes menuShow{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes CloseMenu{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(45deg);
+    }
+}
+@keyframes menuHide{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0;
+    }
+}
+@keyframes OpenMenu{
+    from{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+/* Developer */
+.fondo{
+    background-color: rgba(255, 255, 0, 0.527)
+}
