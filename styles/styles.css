@@ -78,9 +78,10 @@ a:hover{
 }
 /* Section */
 h2{
-    font-size: 1.5em;
+    font-size: 2em;
+    margin-left: 5%;
 }
-section{
+section.info{
     margin: 5%;
 }
 div.info{
@@ -101,6 +102,9 @@ div.podcast{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: burlywood;
+    padding: 5%;
+    padding-top: 30%;
 }
 iframe{
     margin: auto;
