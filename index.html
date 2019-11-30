@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="styles\styles.css">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="Fonts/Bree_Serif/BreeSerif-Regular.ttf">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -40,47 +41,47 @@
         <section class="info">
             <div class="info">
                 <span style="margin-bottom: 5%;">¡Repasamos toda la actualidad Android! Bienvenidos a vuestra casa, bienvenidos a Topes de Gama</span>
-                <span><a href="https://topesdegama.com/"><button class="boton" style="color: black;">CONOCE MÁS</button></a></span>
+                <span><a href="https://topesdegama.com/"><button class="boton">CONOCE MÁS</button></a></span>
             </div>
         </section>
         <section class="episodios">
-            <h2 id="episodios" style="position: absolute; z-index: 1;">Episodios</h2>
-            <svg viewBox="0 0 100 25" style="position: absolute; ">
-                <polygon fill="rgb(235, 236, 236)" points="0,0 100,0 0,25">
-            </svg>
+            <h2 id="episodios">Episodios</h2>
+            <div class="fondo"></div>
             <div class="podcast">
                 <iframe src="https://open.spotify.com/embed-podcast/episode/3VRTqozkAaDaZIFlKSXcyG" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <iframe src="https://open.spotify.com/embed-podcast/episode/6m2UiqLfPMQMWETn05GM4G" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <iframe src="https://open.spotify.com/embed-podcast/episode/6uxmY7ZwOCDBYRndzFsqes" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <iframe src="https://open.spotify.com/embed-podcast/episode/1yPC5TysS8JmjKoih6M63P" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
-            <svg viewBox="0 0 100 25" style="position: absolute; z-index: -1;">
-                <polygon fill="burlywood" points="0,0 100,0 0,25">
-            </svg>
         </section>
         <section class="nosotros">
             <div>
                 <h2 class="nosotros">De dónde venimos</h2>
-                <input type="checkbox" id="ver">
-                <div class="nosotros"></div>
-                <p>Topes de Gama (antes Andro4all) es un dúo de compañeros originarios de España, conformado por Carlos Santa Engracia y Jaume Lahoz, en este canal, encontrarás análisis y comparativas de lo último en Android, desde tabletas a celulares, con información detallada y precisa, aquí no te perderás nada de las novedades en la tecnología. Tienen una amplia variedad de vídeos desde las clásicas reviews y tops ya sea</p>
-                <label for="ver">
-                    <span style="color: var(--colorSecundario); text-decoration: underline;">Ver mas</span>
-                </label>
-                <p> de smartphones o juegos para Android, hasta los "Enfrentados"; unos vídeos donde se discuten ventajas y desventajas de los smartphones Tope De Gama actuales. Desde el diciembre del 2016 fusionaron su canal secundario (Reviews4all) y Andro4all para formar Topes de Gama.</p>
-                <label for="verMas">
-                    <span style="color: var(--colorSecundario); text-decoration: underline;">Ver menos</span>
-                </label>
+                <p>Topes de Gama (antes Andro4all) es un dúo de compañeros originarios de España, conformado por Carlos Santa Engracia y Jaume Lahoz, en este canal, encontrarás análisis y comparativas de lo último en Android, desde tabletas a celulares, con información detallada y precisa, aquí no te perderás nada de las novedades en la tecnología. Tienen una amplia variedad de vídeos desde las clásicas reviews y tops ya sea de smartphones o juegos para Android, hasta los "Enfrentados"; unos vídeos donde se discuten ventajas y desventajas de los smartphones Tope De Gama actuales. Desde el diciembre del 2016 fusionaron su canal secundario (Reviews4all) y Andro4all para formar Topes de Gama.</p>
             </div>
         </section>
-        <section>
+        <section class="entrevistas">
             <h2 id="entrevistas">Invitadas/os estelares</h2>
         </section>
-        <section>
+        <section class="topicos">
             <h2 id="topicos">Algunos de nuestros temas</h2>
+            <div class="temas">
+                <div>
+                    <i class="fas fa-microchip"></i>
+                    <span>Tecnología</span>
+                </div>
+                <div>
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Smartphones</span>
+                </div>
+                <div>
+                    <i class="fas fa-laptop"></i>
+                    <span>Computadores</span>
+                </div>
+            </div>
         </section>
         <footer>
-            <i class="fab fa-creative-commons"></i><span>Toda la información que aparece en este podcast pertenece a Topes de Gama Unplugged (Spotify).</span>
+            <i class="far fa-copyright"></i><span>Toda la información que aparece en este podcast pertenece a Topes de Gama Unplugged (Spotify).</span>
         </footer>
     </div>
 </body>
